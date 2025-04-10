@@ -1,0 +1,82 @@
+body{
+      height: 1000px;
+      padding-top: 80px;
+      padding-left: 80px;
+}
+.cover-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;   
+      column-gap: 16px;
+      row-gap:30px; 
+
+}
+@media(max-width:937px){
+      .cover-grid{
+            grid-template-columns: 1fr 1fr;
+      }
+}
+@media (min-width:869px) and (max-width:1125px){
+      .cover-grid{
+            grid-template-columns: 1fr 1fr 1fr;
+      }
+}
+@media(min-width:1500px){
+      .cover-grid{
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+}
+
+.image1{
+      width: 100%;
+      height:171.375px;
+      cursor: pointer;      
+}
+
+
+ .profile-picture{
+      width:36px;
+      height:36px;
+      object-fit: cover;
+      margin-top: 0px;
+      border-radius: 25px;
+      cursor: pointer;
+
+ }
+ .row2-grid{
+      display: grid;
+      grid-template-columns: 50px 1fr;
+ }
+
+.vedio-info{
+     margin-top: 0px;
+     font-size: 14px;
+     font-weight: 500;
+     line-height: 20px;
+     margin-bottom: 10px;
+     cursor: pointer;
+}
+.row1{
+      margin-bottom: 8px;
+      position: relative;
+}
+.channel-name,
+.views{
+      font-size: 12px;
+      color: rgb(96, 96, 96);
+      
+}
+.channel-name{
+      margin-bottom: 4px;
+      cursor: pointer;
+}
+.video-time{
+      font-family: Roboto,arial;
+      background-color: black;
+      color: white;
+      position: absolute;
+      bottom: 8px;
+      right: 5px;
+      font-size: 12px;
+      padding:4px;
+      border-radius: 2px;
+}
